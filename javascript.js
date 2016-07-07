@@ -23,6 +23,13 @@ var arrZ = function(array,i,j){
 
 	return result;
 }
+function randomNum(){
+	var result = Math.floor(Math.random() * 9);
+	if(Math.random() > 0.5){
+		result *= -1;
+	}
+	return result;
+}
 function arr(){
 	
 	array = new Array(10);
@@ -34,7 +41,7 @@ function arr(){
 
 			for(var t = 0;t < 10; t++){
 
-				array[i][j][t] = Math.floor(Math.random() * 9);
+				array[i][j][t] = randomNum();
 				
 				}
 			}
